@@ -1,0 +1,48 @@
+
+body, .default {
+    line-height: 1.6em;
+    font-family: "Victor Mono", "Sans-Serif";
+    font-size: 12 px;
+    color: #669;
+}
+
+#enphasis-column {
+    margin: 45px;
+    width: 480px;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+#enphasis-column caption {
+    font-size: 20px;
+}
+
+#enphasis-column th {
+    font-size: 14px;
+    font-weight: normal;
+    padding: 12px 15px;
+    color: #039;
+}
+
+#enphasis-column td {
+    padding: 10px 15px;
+    color: #669;
+    border-top: 1px solid #e8edff;
+}
+
+#enphasis-column div {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+#enphasis-column tr:hover td {
+    color: #339;
+    background: #eff2ff;
+}
+
+.column {
+    background: #d0dafd;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+}

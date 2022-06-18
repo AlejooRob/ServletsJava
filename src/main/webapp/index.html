@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="resources/styles.css" type="text/css"/>
+        <script type="text/javascript" src="resources/functions.js" ></script>
+    </head>
+    <body>
+        <h1>Formulario</h1>
+        <form name="form1" action="/FormHandling/Servlet" method="post" 
+              onsubmit="return validateForm(this)">
+            <input type="hidden" name="hidden" value="valueHidden" />
+            <table width="200" id="enphasis-column">
+                <caption>
+                    Formulario Registro de Datos
+                </caption>
+                <tr>
+                    <td class="column">
+                        Usuario: (*)
+                    </td>
+                    <td>
+                        <input class="default" type="text" name="user" 
+                               onfocus="this.select()" placeholder="Escribir Usuario"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="column">
+                        Password: (*)
+                    </td>
+                    <td>
+                        <input class="default" type="password" name="password"
+                               onfocus="this.select()"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="column">
+                        Tecnologías de Internet: (*)
+                    </td>
+                    <td>
+                        <div>
+                            Java <input type="checkbox" name="tecnology" value="java">
+                            &nbsp;&nbsp;&nbsp;
+                            .Net <input type="checkbox" name="tecnology" value="net">
+                            &nbsp;&nbsp;&nbsp;
+                            Php <input type="checkbox" name="tecnology" value="php">
+                            &nbsp;&nbsp;&nbsp;
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="column">
+                        Genero: (*)
+                    </td>
+                    <td>
+                        Hombre<input type="radio" name="gender" value="M">
+                        &nbsp;&nbsp;&nbsp;
+                        Mujer<input type="radio" name="gender" value="F">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="column">
+                        Ocupacion (*)
+                    </td>
+                    <td>
+                        <select name="occupation" class="default">
+                            <option value="">Seleccionar</option>
+                            <option value="1">Profesor</option>
+                            <option value="2">Ingeniero</option>
+                            <option value="3">Jubilado</option>
+                            <option value="4">Otro</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="column">
+                        Musica Favorita:
+                    </td>
+                    <td>
+                        <select name="music" multiple class="default">
+                            <option value="rock">Rock</option>
+                            <option value="pop">Pop</option>
+                            <option value="salsa">Salsa</option>
+                            <option value="merengue">Merengue</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="columna">
+                        Comentarios:
+                    </td>
+                    <td>
+                        <textarea name="comments" cols="30" rows="2"
+                                  class="default" onfocus="this.select()">
+                            Escribir un texto
+                        </textarea>
+                    </td>
+                </tr>
+                <tr style="text-align: center">
+                    <td>
+                        <input type="reset" value="Limpiar" class="default">
+                    </td>
+                    <td>
+                        <input type="submit" value="Enviar" class="default">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
